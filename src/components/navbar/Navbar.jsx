@@ -1,5 +1,6 @@
 import { ChatBubbleOutlineOutlined, DarkModeOutlined, FullscreenExitOutlined, LanguageOutlined, ListOutlined, NotificationsNoneOutlined, SearchOutlined } from "@mui/icons-material";
 import "./navbar.scss";
+import avatar from "../../images/avatar.png";
 
 const Navbar = () => {
   return (
@@ -11,27 +12,32 @@ const Navbar = () => {
         </div>
         <div className="items">
           <div className="item">
-            <LanguageOutlined />
+            <LanguageOutlined className="icon" />
             English
           </div>
           <div className="item">
-            <DarkModeOutlined />
+            <DarkModeOutlined className="icon" />
           </div>
           <div className="item">
-            <FullscreenExitOutlined />
+            <FullscreenExitOutlined className="icon" />
           </div>
           <div className="item">
-            <NotificationsNoneOutlined />
+            <NotificationsNoneOutlined className="icon" />
+            <div className="counter">1</div>
           </div>
           <div className="item">
-            <ChatBubbleOutlineOutlined />
+            <ChatBubbleOutlineOutlined className="icon" />
+            <div className="counter">2</div>
           </div>
           <div className="item">
-            <ListOutlined />
+            <ListOutlined className="icon" />
+          </div>
+          <div className="item">
+            <img className="avatar" src={avatar} alt="avatar" />
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
 export default Navbar

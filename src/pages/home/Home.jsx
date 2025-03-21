@@ -9,6 +9,9 @@ function Home() {
       <div className="homeContainer">
         <Navbar />
         home container
+        home container
+
+
       </div>
     </div>
   );
